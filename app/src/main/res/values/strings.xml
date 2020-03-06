@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">recipe</string>
+    <string name="button_new_recipe">Create A New Recipe</string>
 </resources>
