@@ -2,6 +2,7 @@ package com.example.recipe;
 
 import android.widget.ListView;
 
+import java.util.Arrays;
 import java.util.List;
 
 public class Recipe {
@@ -78,15 +79,16 @@ public class Recipe {
                 ".\nThe length of time needed to prepare this recipe is: " +
                 this.getTime() + " minutes" + ".\nThe ingredients are: ";
                 for (int i = 0; i < this.ingrediants.size(); i++) {
-                    //System.out.println(i + ". " + i.getName() + ".\n");
-                } System.out.println("The steps are");
+                    System.out.println(i + ". " + i.getName() + ".\n");
+                }
+        System.out.println("The steps are");
                 for (int i = 0; i < this.steps.size(); i++) {
                     System.out.println(steps.get(i));
                 }
     }
 
     public static void main(String[] args){
-        //Recipe mac = new Recipe("Mac & Cheese",15,5, 10, 7, 42);
-        //System.out.println(mac.toString());
+        Recipe mac = new Recipe("Mac & Cheese",15,5, 10, 7, 42, (List) Arrays.asList(new Food(1,2,"Chicken"),new Food(2,1,"Meat")), (List) Arrays.asList("step 1", "step 2", "step 3"));
+        System.out.println(mac.toString());
     }
 }
