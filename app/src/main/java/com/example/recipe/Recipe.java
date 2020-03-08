@@ -1,5 +1,9 @@
 package com.example.recipe;
 
+import android.widget.ListView;
+
+import java.util.List;
+
 public class Recipe {
     //Instance Variables
     String name;
@@ -8,8 +12,8 @@ public class Recipe {
     float protein;
     float fat;
     float carb;
-    int numOfIngrediants;
-    int numOfSteps;
+    List ingrediants;
+    List steps;
 
     //public default constructor needed for creating new instance of recipe object.
     public Recipe(){
@@ -17,15 +21,15 @@ public class Recipe {
     }
 
     //Constructor Declaration of Class
-    private Recipe(String name, int time, float calories, float protein, float fat, float carb, int numOfIngrediants, int numOfSteps){
+    public Recipe(String name, int time, float calories, float protein, float fat, float carb, List ingrediants, List steps){
         this.name = name;
         this.time = time;
         this.calories = calories;
         this.protein = protein;
         this.fat = fat;
         this.carb = carb;
-        this.numOfIngrediants = numOfIngrediants;
-        this.numOfSteps = numOfSteps;
+        this.ingrediants = ingrediants;
+        this.steps = steps;
     }
 
     //method 1
@@ -59,26 +63,30 @@ public class Recipe {
     }
 
     //method 7
-    public int getNumOfIngrediants() {
-        return numOfIngrediants;
+    public List getIngrediants() {
+        return ingrediants;
     }
 
     //method 8
-    public int getNumOfSteps() {
-        return numOfSteps;
+    public List getSteps() {
+        return steps;
     }
 
     @Override
     public String toString(){
         return "The name of the recipe is " + this.getName() +
                 ".\nThe length of time needed to prepare this recipe is: " +
-                this.getTime() + " minutes" + ".\nThe number of ingredients is " +
-                this.getNumOfIngrediants() + ", and the number of steps is " +
-                this.getNumOfSteps() + ".\n";
+                this.getTime() + " minutes" + ".\nThe ingredients are: ";
+                for (int i = 0; i < this.ingrediants.size(); i++) {
+                    //System.out.println(i + ". " + i.getName() + ".\n");
+                } System.out.println("The steps are");
+                for (int i = 0; i < this.steps.size(); i++) {
+                    System.out.println(steps.get(i));
+                }
     }
 
     public static void main(String[] args){
-        Recipe mac = new Recipe("Mac & Cheese",15,5, 10, 7, 42, 3,2);
-        System.out.println(mac.toString());
+        //Recipe mac = new Recipe("Mac & Cheese",15,5, 10, 7, 42);
+        //System.out.println(mac.toString());
     }
 }
