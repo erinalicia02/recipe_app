@@ -11,6 +11,11 @@ public class Recipe {
     int numOfIngrediants;
     int numOfSteps;
 
+    //public default constructor needed for creating new instance of recipe object.
+    public Recipe(){
+
+    }
+
     //Constructor Declaration of Class
     private Recipe(String name, int time, float calories, float protein, float fat, float carb, int numOfIngrediants, int numOfSteps){
         this.name = name;
