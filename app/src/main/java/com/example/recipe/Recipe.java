@@ -75,16 +75,17 @@ public class Recipe {
 
     @Override
     public String toString(){
-        return "The name of the recipe is " + this.getName() +
+        String output = "The name of the recipe is " + this.getName() +
                 ".\nThe length of time needed to prepare this recipe is: " +
-                this.getTime() + " minutes" + ".\nThe ingredients are: ";
+                this.getTime() + " minutes" + ".\nThe ingredients are:.\n";
                 for (int i = 0; i < this.ingrediants.size(); i++) {
-                    System.out.println(i + ". " + i.getName() + ".\n");
+                    output = output.concat((i+1) + ". " + (ingrediants.get(i).getName()) + ".\n");
                 }
-        System.out.println("The steps are");
+        output = output.concat("The steps are");
                 for (int i = 0; i < this.steps.size(); i++) {
-                    System.out.println(steps.get(i));
+                    output = output.concat((String) steps.get(i));
                 }
+    return output;
     }
 
     public static void main(String[] args){
