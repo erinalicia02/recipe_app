@@ -28,6 +28,27 @@ public class Food {
 
     public void setUnits(int units){
         this.units = units;
+        /*
+        https://en.wikipedia.org/wiki/Cooking_weights_and_measures
+        1   drop
+        2   smidgen
+        3   pinch
+        4   dash
+        5   saltspoon or scruple
+        6   coffeespoon
+        7   Fluid dram
+        8   teaspoon
+        9   dessertspoon
+        10  tablespoon
+        11  fluid ounce
+        12  wineglass
+        13  gill or teacup
+        14  cup
+        15  pint
+        16  quart
+        17  pottle
+        18  gallon
+         */
     }
 
     public float getAmount(){
