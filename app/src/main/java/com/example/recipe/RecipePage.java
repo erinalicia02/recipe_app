@@ -40,8 +40,9 @@ public class RecipePage extends AppCompatActivity {
         recipe.protein = Float.valueOf(protein.getText().toString());
         recipe.fat = Float.valueOf(fat.getText().toString());
         recipe.carb = Float.valueOf(carbs.getText().toString());
-        recipe.numOfIngrediants = Integer.valueOf(numIngredients.getText().toString());
-        recipe.numOfSteps = Integer.valueOf(numSteps.getText().toString());
+        //Needs updated for Foood object & steps list
+        //recipe.numOfIngrediants = Integer.valueOf(numIngredients.getText().toString());
+        //recipe.numOfSteps = Integer.valueOf(numSteps.getText().toString());
 
         Gson gson = new Gson();
 
