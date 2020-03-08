@@ -50,7 +50,7 @@ public class RecipePage extends AppCompatActivity {
         System.out.println(recipeJson);
         SharedPreferences pref = getApplicationContext().getSharedPreferences("myPref", 0);
         SharedPreferences.Editor editor = pref.edit();
-        editor.putString(recipe.name, recipeJson);
+        editor.putString("recipe", recipeJson); // change so it saves the recipe as recipe.name when everything else is finished.
         editor.apply();
 
         Toast toast = Toast.makeText(this, "recipe saved", Toast.LENGTH_SHORT);
