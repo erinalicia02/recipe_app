@@ -23,6 +23,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void landingPage(View view2){
+        Intent intent2 = new Intent(this, LandingPage.class);
+        startActivity(intent2);
+    }
+
     public void loadRecipe(){
         SharedPreferences pref = getApplicationContext().getSharedPreferences("MyPref", 0);
         String recipeJson = pref.getString("recipe", null);

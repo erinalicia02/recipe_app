@@ -13,7 +13,7 @@ public class Recipe {
     float protein;
     float fat;
     float carb;
-    List ingrediants;
+    List<Food> ingrediants;
     List steps;
 
     //public default constructor needed for creating new instance of recipe object.
