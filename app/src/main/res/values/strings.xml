@@ -1,9 +1,12 @@
 <resources>
-    <string name="app_name">recipe</string>
+    <string name="app_name">Your Recipes</string>
     <string name="button_new_recipe">Create A New Recipe</string>
     <string name="button_search">Search</string>
     <string name="recipe_name">Recipe Name</string>
     <string name="button_menu">Menu</string>
     <string name="search">Search</string>
-    <string name="landing">Landing Page</string>
+    <string name="landing">View Recipes</string>
+    <string name="ex1">Japanese Cuisine Mussels With Lentils</string>
+    <string name="ex2">French Fries with Chicken Sauce</string>
+    <string name="ex3">Italian Pasta Manicotti with Canoli and Cheese</string>
 </resources>

@@ -1,11 +1,16 @@
 package com.example.recipe;
 
+import android.content.Intent;
+import android.os.Bundle;
 import android.widget.ListView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.Arrays;
 import java.util.List;
 
-public class Recipe {
+public class Recipe extends AppCompatActivity {
+
     //Instance Variables
     String name;
     int time;

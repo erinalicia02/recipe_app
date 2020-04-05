@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent2);
     }
 
+
     public void loadRecipe(){
         SharedPreferences pref = getApplicationContext().getSharedPreferences("MyPref", 0);
         String recipeJson = pref.getString("recipe", null);
